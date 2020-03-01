@@ -553,6 +553,11 @@ app.use('/pl/course_instance/:course_instance_id/instructor/question/:question_i
 
 // Exam/Homeworks student routes are polymorphic - they have multiple handlers, each of
 // which checks the assessment type and calls next() if it's not the right type
+app.use('/pl/course_instance/:course_instance_id/progress_report', [
+    require('./middlewares/logPageView')('studentProgress'),
+    require('./middlewares/studentAssessmentAccess'),
+    require('./pages/studentProgressReport/progress_report'),
+]);
 app.use('/pl/course_instance/:course_instance_id/gradebook', [
     require('./middlewares/logPageView')('studentGradebook'),
     require('./middlewares/studentAssessmentAccess'),

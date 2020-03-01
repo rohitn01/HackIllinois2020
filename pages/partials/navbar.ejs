@@ -88,9 +88,10 @@ if (typeof authz_data !== 'undefined' && authz_data.has_instructor_view) {
             rolebutton.otherLink = `${urlPrefix}/instructor/question/${question.id}`;
             rolebutton.other += " for " + question.qid;
         } else if (typeof assessment_instance !== 'undefined' && assessment_instance.assessment_id) {
-            rolebutton.otherLink = `${urlPrefix}/instructor/assessment/${assessment_instance.assessment_id}`;
+              rolebutton.otherLink = `${urlPrefix}/instructor/assessment/${assessment_instance.assessment_id}`;
             rolebutton.other += " for " + assessment.tid;
         }
+
     } else if (navbarType == 'instructor') {
         rolebutton.color = "btn-danger";
         rolebutton.other = "Switch to student view";
