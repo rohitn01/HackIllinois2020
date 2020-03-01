@@ -8,3 +8,6 @@ PrairieLearn is an online problem-driven learning system for creating homeworks 
 Documentation website: [http://prairielearn.readthedocs.io/](http://prairielearn.readthedocs.io/) 
 How to download docker and run the website: https://prairielearn.readthedocs.io/en/latest/installingLocal/
 
+Use this command if unable to use commands in file: docker run -it --rm -p 3000:3000 -v $(pwd):/PrairieLearn prairielearn/prairielearn
+
+
