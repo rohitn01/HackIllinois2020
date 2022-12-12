@@ -32,7 +32,7 @@
         "diff": "^4.0.2",
         "dockerode": "^3.0.2",
         "ejs": "^3.0.1",
-        "express": "^4.17.1",
+        "express": "^4.17.3",
         "fabric": "^3.6.1",
         "file-type": "^13.1.2",
         "filesize": "^6.0.1",
